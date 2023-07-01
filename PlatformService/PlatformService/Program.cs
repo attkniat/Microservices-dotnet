@@ -20,4 +20,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+
+PrepDb.PrepPolulation(app);
+
 app.Run();
