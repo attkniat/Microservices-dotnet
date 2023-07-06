@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using AutoMapper;
 using CommandsService.Data;
 using CommandsService.Dtos;
