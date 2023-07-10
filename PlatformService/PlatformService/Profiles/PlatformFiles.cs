@@ -4,12 +4,13 @@ using PlatformService.Model;
 
 namespace PlatformService.Profiles
 {
-    public class PlatformFiles: Profile
+    public class PlatformFiles : Profile
     {
         public PlatformFiles()
         {
             CreateMap<Platform, PlatformReadDto>();
             CreateMap<PlatformCreateDto, Platform>();
+            CreateMap<PlatformReadDto, PlatformPublishedDto>();
         }
     }
 }
