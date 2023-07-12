@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "621f571e-a5df-442a-b3c9-c24d5d7032bd",
+		"name": "K8S",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14945087"
+	},
+	"item": [
+		{
+			"name": "Platform Service (Nginx)",
+			"item": [
+				{
+					"name": "Get all Platforms (Name & Id)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://acme.com/api/c/platforms",
+							"protocol": "http",
+							"host": [
+								"acme",
+								"com"
+							],
+							"path": [
+								"api",
+								"c",
+								"platforms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Platforms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://acme.com/api/platforms",
+							"protocol": "http",
+							"host": [
+								"acme",
+								"com"
+							],
+							"path": [
+								"api",
+								"platforms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Platforms",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Beialoi\",\r\n    \"Publlisher\": \"Beialoi\",\r\n    \"cost\": \"Free\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://acme.com/api/platforms",
+							"protocol": "http",
+							"host": [
+								"acme",
+								"com"
+							],
+							"path": [
+								"api",
+								"platforms"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Platform Service (Node Port)",
+			"item": [
+				{
+					"name": "Get all Platforms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:32632/api/platforms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "32632",
+							"path": [
+								"api",
+								"platforms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Platform",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Docker\",\r\n    \"Publlisher\": \"Docker\",\r\n    \"cost\": \"Free\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:32632/api/platforms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "32632",
+							"path": [
+								"api",
+								"platforms"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Command Service (Nginx)",
+			"item": [
+				{
+					"name": "Get ALL Platforms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://acme.com/api/c/platforms",
+							"protocol": "http",
+							"host": [
+								"acme",
+								"com"
+							],
+							"path": [
+								"api",
+								"c",
+								"platforms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ALL Commands fot Platforms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://acme.com/api/c/platforms/7/commands",
+							"protocol": "http",
+							"host": [
+								"acme",
+								"com"
+							],
+							"path": [
+								"api",
+								"c",
+								"platforms",
+								"7",
+								"commands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Command for Platform Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HowTo\" : \"Push a docker container to hub\" ,\r\n    \"CommandLine\" : \"docker push <name of container>\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://acme.com/api/c/platforms/7/commands/",
+							"protocol": "http",
+							"host": [
+								"acme",
+								"com"
+							],
+							"path": [
+								"api",
+								"c",
+								"platforms",
+								"7",
+								"commands",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
