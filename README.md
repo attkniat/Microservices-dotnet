@@ -3,7 +3,7 @@
 
 - C# .NET 6
 - DDD
-- MSQL
+- MSSQL
 - EF Core
 - RabbitMQ as Message Bus
 - Http
